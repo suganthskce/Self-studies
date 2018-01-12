@@ -1,0 +1,22 @@
+
+From a high level, Struts2 is a pull-MVC (or MVC2) framework. The Model-ViewController pattern in Struts2 is implemented with the following five core components −
+
+1. Actions
+2. Interceptors
+3. Value Stack / OGNL
+4. Results / Result types
+5. View technologies
+
+You can understand the work flow through user's request life cycle in Struts 2 as follows −
+
+1. User sends a request to the server for requesting for some resource (i.e. pages).
+
+2. The Filter Dispatcher looks at the request and then determines the appropriate Action.
+
+3. Configured interceptor functionalities applies such as validation, file upload etc.
+
+4. Selected action is performed based on the requested operation.
+
+5. Again, configured interceptors are applied to do any post-processing if required.
+
+6. Finally, the result is prepared by the view and returns the result to the user.
