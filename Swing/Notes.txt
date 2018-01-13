@@ -1,0 +1,170 @@
+Imporatant Methods:
+
+public void add(Component c)	->add a component on another component.
+public void setSize(int width,int height)	->sets size of the component.
+public void setLayout(LayoutManager m)	->sets the layout manager for the component.
+public void setVisible(boolean b)	->sets the visibility of the component. It is by default false.
+
+package -->  javax.swing.*;
+Keywords:
+JFrame
+--------------------------------------------JButton--------------------------------------------
+                                Commonly used Constructors:
+
+JButton()	It creates a button with no text and icon.
+JButton(String s)	It creates a button with the specified text.
+JButton(Icon i)	It creates a button with the specified icon object.
+                              
+                              Commonly used Methods of AbstractButton class:
+
+void setText(String s)	It is used to set specified text on button
+String getText()	It is used to return the text of the button.
+void setEnabled(boolean b)	It is used to enable or disable the button.
+void setIcon(Icon b)	It is used to set the specified Icon on the button.
+Icon getIcon()	It is used to get the Icon of the button.
+void setMnemonic(int a)	It is used to set the mnemonic on the button.
+void addActionListener(ActionListener a)	It is used to add the action listener to this object.
+
+
+--------------------------------------------JLabel--------------------------------------------
+                              Commonly used Constructors:
+JLabel()	Creates a JLabel instance with no image and with an empty string for the title.
+JLabel(String s)	Creates a JLabel instance with the specified text.
+JLabel(Icon i)	Creates a JLabel instance with the specified image.
+JLabel(String s, Icon i, int horizontalAlignment)	Creates a JLabel instance with the specified text, image, and horizontal alignment.
+                                Commonly used Methods:
+String getText()	t returns the text string that a label displays.
+void setText(String text)	It defines the single line of text this component will display.
+void setHorizontalAlignment(int alignment)	It sets the alignment of the label's contents along the X axis.
+Icon getIcon()	It returns the graphic image that the label displays.
+int getHorizontalAlignment()	It returns the alignment of the label's contents along the X axis.
+
+--------------------------------------------JTextField--------------------------------------------
+                                    Commonly used Constructors:
+
+JTextField()	Creates a new TextField
+JTextField(String text)	Creates a new TextField initialized with the specified text.
+JTextField(String text, int columns)	Creates a new TextField initialized with the specified text and columns.
+JTextField(int columns)	Creates a new empty TextField with the specified number of columns.
+                                
+                                Commonly used Methods:
+
+void addActionListener(ActionListener l)	It is used to add the specified action listener to receive action events from this textfield.
+Action getAction()	It returns the currently set Action for this ActionEvent source, or null if no Action is set.
+void setFont(Font f)	It is used to set the current font.
+void removeActionListener(ActionListener l)	It is used to remove the specified action listener so that it no longer receives action events from this textfield.
+
+
+--------------------------------------------JTextArea--------------------------------------------
+                                  Commonly used Constructors:
+
+JTextArea()	Creates a text area that displays no text initially.
+JTextArea(String s)	Creates a text area that displays specified text initially.
+JTextArea(int row, int column)	Creates a text area with the specified number of rows and columns that displays no text initially.
+JTextArea(String s, int row, int column)	Creates a text area with the specified number of rows and columns that displays specified text.
+                                
+                                Commonly used Methods:
+
+void setRows(int rows)	It is used to set specified number of rows.
+void setColumns(int cols)	It is used to set specified number of columns.
+void setFont(Font f)	It is used to set the specified font.
+void insert(String s, int position)	It is used to insert the specified text on the specified position.
+void append(String s)	It is used to append the given text to the end of the document.
+
+
+--------------------------------------------JPasswordField
+                            Commonly used Constructors:
+JPasswordField()	Constructs a new JPasswordField, with a default document, null starting text string, and 0 column width.
+JPasswordField(int columns)	Constructs a new empty JPasswordField with the specified number of columns.
+JPasswordField(String text)	Constructs a new JPasswordField initialized with the specified text.
+JPasswordField(String text, int columns)	Construct a new JPasswordField initialized with the specified text and columns.
+
+
+--------------------------------------------JCheckBox
+                                    Commonly used Constructors:
+JJCheckBox()	Creates an initially unselected check box button with no text, no icon.
+JChechBox(String s)	Creates an initially unselected check box with text.
+JCheckBox(String text, boolean selected)	Creates a check box with text and specifies whether or not it is initially selected.
+JCheckBox(Action a)	Creates a check box where properties are taken from the Action supplied.
+
+                                          Commonly used Methods:
+
+AccessibleContext getAccessibleContext()	It is used to get the AccessibleContext associated with this JCheckBox.
+protected String paramString()	It returns a string representation of this JCheckBox.
+
+
+--------------------------------------------JRadioButton
+                                    Commonly used Constructors:
+
+JRadioButton()	Creates an unselected radio button with no text.
+JRadioButton(String s)	Creates an unselected radio button with specified text.
+JRadioButton(String s, boolean selected)	Creates a radio button with the specified text and selected status.
+                                          
+                                          Commonly used Methods:
+
+void setText(String s)	It is used to set specified text on button.
+String getText()	It is used to return the text of the button.
+void setEnabled(boolean b)	It is used to enable or disable the button.
+void setIcon(Icon b)	It is used to set the specified Icon on the button.
+Icon getIcon()	It is used to get the Icon of the button.
+void setMnemonic(int a)	It is used to set the mnemonic on the button.
+void addActionListener(ActionListener a)	It is used to add the action listener to this object.
+
+
+--------------------------------------------JComboBox
+
+                                Commonly used Constructors:
+
+JComboBox()	Creates a JComboBox with a default data model.
+JComboBox(Object[] items)	Creates a JComboBox that contains the elements in the specified array.
+JComboBox(Vector<?> items)	Creates a JComboBox that contains the elements in the specified Vector.
+
+                                  Commonly used Methods:
+
+void addItem(Object anObject)	It is used to add an item to the item list.
+void removeItem(Object anObject)	It is used to delete an item to the item list.
+void removeAllItems()	It is used to remove all the items from the list.
+void setEditable(boolean b)	It is used to determine whether the JComboBox is editable.
+void addActionListener(ActionListener a)	It is used to add the ActionListener.
+void addItemListener(ItemListener i)	It is used to add the ItemListener.
+
+
+
+--------------------------------------------JTable
+                            Commonly used Constructors:
+
+JTable()	Creates a table with empty cells.
+JTable(Object[][] rows, Object[] columns)	Creates a table with the specified data.
+
+
+--------------------------------------------JList
+                              Commonly used Constructors:
+
+JList()	Creates a JList with an empty, read-only, model.
+JList(ary[] listData)	Creates a JList that displays the elements in the specified array.
+JList(ListModel<ary> dataModel)	Creates a JList that displays elements from the specified, non-null, model.
+                              
+                              Commonly used Methods:
+
+Void addListSelectionListener(ListSelectionListener listener)	It is used to add a listener to the list, to be notified each time a change to the selection occurs.
+int getSelectedIndex()	It is used to return the smallest selected cell index.
+ListModel getModel()	It is used to return the data model that holds a list of items displayed by the JList component.
+void setListData(Object[] listData)	It is used to create a read-only ListModel from an array of objects.
+
+
+
+
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------
+
+
+
+
+
+
+
+
