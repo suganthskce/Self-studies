@@ -1,0 +1,218 @@
+Servlet technology is used to create web application (resides at server side and generates dynamic web page).
+Servlet technology is robust and scalable because of java language. Before Servlet, CGI (Common Gateway Interface) scripting language was popular as a server-side programming language.
+
+There are many interfaces and classes in the servlet API such as Servlet, GenericServlet, HttpServlet, ServletRequest, ServletResponse etc.
+
+A web application is an application accessible from the web. A web application is composed of web components like Servlet, 
+JSP, Filter etc. and other components such as HTML. The web components typically execute in Web Server and respond to HTTP request.
+
+-----------------------------------------CGI (Common Gateway Interface)----------------------------------------------
+
+CGI technology enables the web server to call an external program and pass HTTP request information to the external program to process the request. For each request, it starts a new process.
+<<Img attached CGI.jpg>>
+Disadvantages of CGI
+There are many problems in CGI technology:
+
+1. If number of clients increases, it takes more time for sending response.
+2. For each request, it starts a process and Web server is limited to start processes.
+3. It uses platform dependent language e.g. C, C++, perl.
+
+
+
+------------------------------------------------Servlet------------------------------------------------------------
+There are many advantages of servlet over CGI. The web container creates threads for handling the multiple requests to the servlet. Threads have a lot of benefits over the Processes such as they share a common memory area, lightweight, cost of communication between the threads are low. The basic benefits of servlet are as follows:
+<<Img attached Servlet.jpg>>
+better performance: because it creates a thread for each request not process.
+Portability: because it uses java language.
+Robust: Servlets are managed by JVM so we don't need to worry about memory leak, garbage collection etc.
+Secure: because it uses java language..
+
+
+Terminology:
+
+Website: static vs dynamic -> It is a collection of related web pages that may contain text, images, audio and video.
+HTTP -> It is the data communication protocol used to establish communication between client and server.
+HTTP Requests -> It is the request send by the computer to a web server that contains all sorts of potentially interesting information.
+Get vs Post -> It give the difference between GET and POST request.
+Container -> It is used in java for dynamically generate the web pages on the server side.
+Server: Web vs Application -> It is used to manage the network resources and for running the program or software that provides services.
+Content Type	-> It is HTTP header that provides the description about what are you sending to the browser.
+
+
+-------------------Website--------------------
+
+A website can be of two types:
+Static Website  -> The codes are fixed for each page so the information contained in the page does not change and it looks like a printed page.
+Dynamic Website -> Dynamic website is a collection of dynamic web pages whose content changes dynamically. It accesses content from a database or Content Management System (CMS). Therefore, when you alter or update the content of the database, the content of the website is also altered or updated.
+
+
+Dynamic website uses client-side scripting or server-side scripting, or both to generate dynamic content.
+
+Client side scripting generates content at the client computer on the basis of user input. The web browser downloads the web page from the server and processes the code within the page to render information to the user.
+
+In server side scripting, the software runs on the server and processing is completed in the server then plain pages are sent to the user.
+
+
+---------------------------HTTP----------------------------
+
+The Hypertext Transfer Protocol (HTTP) is application-level protocol for collaborative, distributed, hypermedia information systems. It is the data communication protocol used to establish communication between client and server.
+HTTP is TCP/IP based communication protocol
+default port is TCP 80
+
+Key Features of HTTP:
+HTTP is media independent: It refers to any type of media content can be sent by HTTP as long as both the server and the client can handle the data content.
+HTTP is connectionless: It is a connectionless approach in which HTTP client i.e., a browser initiates the HTTP request and after the request is sends the client disconnects from server and waits for the response.
+HTTP is stateless: The client and server are aware of each other during a current request only. Afterwards, both of them forget each other. Due to the stateless nature of protocol, neither the client nor the server can retain the information about different request across the web pages.
+
+----------------------------HTTP Requests--------------------------
+The HTTP client sends the request to the server in the form of request message which includes following information:
+
+The Request-line
+The analysis of source IP address, proxy and port
+The analysis of destination IP address, protocol, port and host
+The Requested URI (Uniform Resource Identifier)
+The Request method and Content
+The User-Agent header
+The Connection control header
+The Cache control header
+
+The HTTP request method indicates the method to be performed on the resource identified by the Requested URI (Uniform Resource Identifier). This method is case-sensitive and should be used in uppercase.
+
+HTTP Request	Description
+GET		Asks to get the resource at the requested URL.
+POST		Asks the server to accept the body info attached. It is like GET request with extra info sent with the request.
+HEAD		Asks for only the header part of whatever a GET would return. Just like GET but with no body.
+TRACE		Asks for the loopback of the request message, for testing or troubleshooting.
+PUT		Says to put the enclosed info (the body) at the requested URL.
+DELETE		Says to delete the resource at the requested URL.
+OPTIONS		Asks for a list of the HTTP methods to which the thing at the request URL can respond
+
+----------------------------------GET vs POST------------------------------------------------
+There are many differences between the Get and Post request. Let's see these differences:
+
+			GET								POST
+1) In case of Get request, only limited amount of 
+   data can be sent because data is sent in header.	In case of post request, large amount of data can be sent because data is sent in body.
+2) Get request is not secured because data is 
+   exposed in URL bar.					Post request is secured because data is not exposed in URL bar.
+3) Get request can be bookmarked.			Post request cannot be bookmarked.
+4) Get request is idempotent . It means second
+   request will be ignored until response of first
+   request is delivered					Post request is non-idempotent.
+5) Get request is more efficient and used 
+   more than Post.					Post request is less efficient and used less than get.
+
+
+----------------------------------------Servlet Container-----------------------------------------
+
+It provides the runtime environment for JavaEE (j2ee) applications. The client/user can request only a static WebPages from the server. If the user wants to read the web pages as per input then the servlet container is used in java.
+
+The servlet container is used in java for dynamically generate the web pages on the server side. Therefore the servlet container is the part of a web server that interacts with the servlet for handling the dynamic web pages from the client.
+
+The servlet container is the part of web server which can be run in a separate process. We can classify the servlet container states in three types:
+
+Standalone: It is typical Java-based servers in which the servlet container and the web servers are the integral part of a single program. For example:- Tomcat running by itself
+In-process: It is separated from the web server, because a different program is runs within the address space of the main server as a plug-in. For example:- Tomcat running inside the JBoss.
+Out-of-process: The web server and servlet container are different programs which are run in a different process. For performing the communications between them, web server uses the plug-in provided by the servlet container.
+
+
+The Servlet Container performs many operations that are given below:
+Life Cycle Management
+Multithreaded support
+Object Pooling
+Security etc.
+
+------------------------------------------Server: Web vs. Application------------------------------
+
+Server is a device or a computer program that accepts and responds to the request made by other program, known as client. It is used to manage the network resources and for running the program or software that provides services.
+
+There are two types of servers:
+Web Server
+Application Server
+	
+					Web server				
+Web server contains only web or servlet container. It can be used for servlet, jsp, struts, jsf etc. It can't be used for EJB.
+
+It is a computer where the web content can be stored. In general web server can be used to host the web sites but there also used some other web servers also such as FTP, email, storage, gaming etc.
+
+Examples of Web Servers are: Apache Tomcat and Resin.
+<<Web_Server.png>>
+					
+					Application server
+Application server contains Web and EJB containers. It can be used for servlet, jsp, struts, jsf, ejb etc. It is a component based product that lies in the middle-tier of a server centric architecture.
+It provides the middleware services for state maintenance and security, along with persistence and data access. It is a type of server designed to install, operate and host associated services and applications for the IT services, end users and organizations.
+<<App_Server.png>>
+
+The Example of Application Servers are:
+JBoss: Open-source server from JBoss community.
+Glassfish: Provided by Sun Microsystem. Now acquired by Oracle.
+Weblogic: Provided by Oracle. It more secured.
+Websphere: Provided by IBM.
+
+----------------------------------------------------------Content type-------------------------------------------------
+Content Type is also known as MIME (Multipurpose internet Mail Extension) Type. It is a HTTP header that provides the description about what are you sending to the browser.
+
+MIME is an internet standard that is used for extending the limited capabilities of email by allowing the insertion of sounds, images and text in a message.
+
+The features provided by MIME to the email services are as given below:
+It supports the non-ASCII characters
+It supports the multiple attachments in a single message
+It supports the attachment which contains executable audio, images and video files etc.
+It supports the unlimited message length.
+
+
+List of Content Types :
+There are many content types. The commonly used content types are given below:
+text/html
+text/plain
+application/msword
+application/vnd.ms-excel
+application/jar
+application/pdf
+application/octet-stream
+application/x-zip
+images/jpeg
+images/png
+images/gif
+audio/mp3
+video/mp4
+video/quicktime etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
