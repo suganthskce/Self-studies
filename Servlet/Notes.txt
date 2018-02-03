@@ -1,0 +1,11 @@
+Servlet technology is used to create web application (resides at server side and generates dynamic web page).
+
+There are many interfaces and classes in the servlet API such as Servlet, GenericServlet, HttpServlet, ServletRequest, ServletResponse etc.
+
+A web application is an application accessible from the web. A web application is composed of web components like Servlet, 
+JSP, Filter etc. and other components such as HTML. The web components typically execute in Web Server and respond to HTTP request.
+
+
+
+
+
