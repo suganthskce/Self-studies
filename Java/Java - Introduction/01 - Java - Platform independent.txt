@@ -1,0 +1,63 @@
+C program(compiler) -----> Assembly codes (Assembler)----> Binary code ---->  processor
+
+Java (Java Compiler)   ------> Class files<<Bite code>>  ----> JVM installed in RAM converts to native binary codes  --->  processor
+
+
+More Explanation:
+Step 1) The code to display addition of two numbers is System.out.println(1+2), and saved as .java file.
+
+Step 2) Using the java compiler the code is converted into an intermediate code called the bytecode. The output is a .class file.
+
+Step 3) This code is not understood by any platform, but only a virtual platform called the Java Virtual Machine.
+
+Step 4) This Virtual Machine resides in the RAM of your operating system. When the Virtual Machine is fed with this bytecode, it identifies the platform it is working on and converts the bytecode into the native machine code.
+
+
+
+Software Code Compilation & Execution process
+In order to write and execute a software program, you need the following
+
+1) Editor – To type your program into, a notepad could be used for this
+
+2) Compiler – To convert your high language program into native machine code
+
+3) Linker – To combine different program files reference in your main program together.
+
+4) Loader – To load the files from your secondary storage device like Hard Disk, Flash Drive, CD into RAM for execution. The loading is automatically done when you execute your code.
+
+5) Execution – Actual execution of the code which is handled by your OS & processor.
+
+
+Programming languages are classified as
+1. Higher Level Language Ex. C++, Java
+2. Middle-Level Languages Ex. C
+3. Low-Level Language Ex Assembly
+4. finally the lowest level as the Machine Language.
+A compiler is a program which converts a program from one level of language to another. Example conversion of C++ program into machine code.
+
+The java compiler converts high-level java code into bytecode (which is also a type of machine code).
+
+An interpreter is a program which converts a program at one level to another programming language at the same level. Example conversion of Java program into C++
+
+In Java, the Just In Time Code generator converts the bytecode into the native machine code which are at the same programming levels.
+
+
+
+
+Why is Java slow?
+The two main reasons behind the slowness of Java are
+
+Dynamic Linking: Unlike C, linking is done at run-time, every time the program is run in Java.
+Run-time Interpreter: The conversion of byte code into native machine code is done at run-time in Java which furthers slows down the speed
+
+However, the latest version of Java has addressed the performance bottlenecks to a great extent.
+
+
+
+
+
+
+
+
+
+

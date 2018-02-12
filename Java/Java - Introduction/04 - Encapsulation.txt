@@ -1,0 +1,21 @@
+What is Encapsulation in Java?
+Encapsulation is a principle of wrapping data (variables) and code together as a single unit. It is one of the four OOP concepts. The other three are Inheritance, Polymorphism, and Abstraction.
+
+Data Hiding in Java:
+Frequently, Java encapsulation is referred as data hiding. But more than data hiding, encapsulation concept is meant for better management or grouping of related data.
+To achieve a lesser degree of encapsulation in Java, you can use modifiers like "protected" or "public". With encapsulation, developers can change one part of the code easily without affecting other.
+
+Advantages of Encapsulation in Java:
+Encapsulation is binding the data with its related functionalities. Here functionalities mean "methods" and data means "variables"
+So we keep variable and methods in one place. That place is "class." Class is the base for encapsulation.
+With Java Encapsulation, you can hide (restrict access) to critical data members in your code, which improves security
+As we discussed earlier, if a data member is declared "private", then it can only be accessed within the same class. No outside class can access data member (variable) of other class.
+However, if you need to access these variables, you have to use public "getter" and "setter" methods.
+
+
+
+
+
+
+
+

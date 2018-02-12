@@ -1,0 +1,46 @@
+
+What is Abstraction in OOP?
+Abstraction is selecting data from a larger pool to show only the relevant details to the object. It helps to reduce programming complexity and effort.
+ In Java, abstraction is accomplished using Abstract classes and interfaces. It is one of the most important concepts of OOPs.
+
+
+While sending SMS, you just type the text and send the message. Here, you do not care about the internal processing of the message delivery. 
+Abstraction can be achieved using Abstract Class and Abstract Method in Java.
+
+Abstract Class:
+A class which is declared “abstract” is called as an abstract class. It can have abstract methods as well as concrete methods. A normal class cannot have abstract methods.
+
+Abstract Method:
+A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
+
+
+Rules of Abstract Method:
+Abstract methods do not have an implementation; it only has method signature
+If a class is using an abstract method they must be declared abstract. The opposite cannot be true. This means that an abstract class does not necessarily have an abstract method.
+If a regular class extends an abstract class, then that class must implement all the abstract methods of the abstract parent
+
+Difference between Abstraction and Encapsulation:
+Abstraction							Encapsulation
+Abstraction solves the issues at the design level.					Encapsulation solves it implementation level.
+Abstraction is about hiding unwanted details while showing most essential information.	Encapsulation means hiding the code and data into a single unit.
+Abstraction allows focussing on what the information object must contain		Encapsulation means hiding the internal details or mechanics of how an object does something for security reasons.
+
+Difference between Abstract Class and Interface:
+Abstract Class												Interface
+An abstract class can have both abstract and non-abstract methods.				The interface can have only abstract methods.
+
+It does not support multiple inheritances.							It supports multiple inheritances.
+
+It can provide the implementation of the interface.						It can not provide the implementation of the abstract class.
+
+An abstract class can have protected and abstract public methods.				An interface can have only have public abstract methods.
+
+An abstract class can have final, static, or static final variable with any access specifier.	The interface can only have a public static final variable.
+
+
+
+
+When to use Abstract Methods & Abstract Class?
+Abstract methods are mostly declared where two or more subclasses are also doing the same thing in different ways through different implementations. It also extends the same Abstract class and offers different implementations of the abstract methods.
+
+Abstract classes help to describe generic types of behaviors and object-oriented programming class hierar
