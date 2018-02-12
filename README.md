@@ -1,6 +1,10 @@
 # Self-studies
-Materials and Contest for self-study topics
+On-going topics:
+Core - Java
 
--> php
--> Spring
--> strut
+Future topics:
+Servlet
+Strut
+Swing
+php
+Python
