@@ -8,7 +8,7 @@ While sending SMS, you just type the text and send the message. Here, you do not
 Abstraction can be achieved using Abstract Class and Abstract Method in Java.
 
 Abstract Class:
-A class which is declared ìabstractî is called as an abstract class. It can have abstract methods as well as concrete methods. A normal class cannot have abstract methods.
+A class which is declared ‚Äúabstract‚Äù is called as an abstract class. It can have abstract methods as well as concrete methods. A normal class cannot have abstract methods.
 
 Abstract Method:
 A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
@@ -43,4 +43,4 @@ An abstract class can have final, static, or static final variable with any acce
 When to use Abstract Methods & Abstract Class?
 Abstract methods are mostly declared where two or more subclasses are also doing the same thing in different ways through different implementations. It also extends the same Abstract class and offers different implementations of the abstract methods.
 
-Abstract classes help to describe generic types of behaviors and object-oriented programming class hierar
+Abstract classes help to describe generic types of behaviors and object-oriented programming class hierarchy.
