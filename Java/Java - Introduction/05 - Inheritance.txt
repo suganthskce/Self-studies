@@ -1,0 +1,43 @@
+What is inheritance?
+  Inheritance is a mechanism in which one class acquires the property of another class. 
+For example, a child inherits the traits of his/her parents. With inheritance, we can reuse the fields and methods of the existing class. 
+Hence, inheritance facilitates Reusability and is an important concept of OOPs.
+                    
+                    
+Inheritance in Java
+  In Java, when an "Is-A" relationship exists between two classes we use Inheritance
+  The parent class is termed super class and the inherited class is the sub class
+  The keyword "extend" is used by the sub class to inherit the features of super class
+  Inheritance is important since it leads to reusability of code
+   
+  
+Types of inheritance:
+                    1.Single Inheritance
+                        In Single Inheritance one class extends another class (one class only).
+                        If Class B extends only Class A. --- > Class A is a super class and Class B is a Sub-class.
+                        
+                    2.Multiple Inheritance:
+                        In Multiple Inheritance, one class extending more than one class. 
+                        Java does not support multiple inheritance.
+                        
+                    3.Multilevel Inheritance:
+                          In Multilevel Inheritance, one class can inherit from a derived class. 
+                          Hence, the derived class becomes the base class for the new class.
+                          
+                    4.Hierarchical Inheritance:
+                          In Hierarchical Inheritance, one class is inherited by many sub classes.
+
+                    5.Hybrid Inheritance:
+                          Hybrid inheritance is a combination of Single and Multiple inheritance.
+                    
+                    
+                    
+                    
+Super Keyword
+  The super keyword is similar to "this" keyword.
+  The keyword super can be used to access any data member or methods of the parent class.
+  Super keyword can be used at variable, method and constructor level.
+
+  Syntax:
+          super.<method-name>();                    
+                    
