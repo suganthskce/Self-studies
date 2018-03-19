@@ -1,0 +1,4 @@
+What is Polymorphism?
+    Polymorphism is a OOPs concept where one name can have many forms.For example, you have a smartphone for communication.
+The communication mode you choose could be anything.It can be a call, a text message, a picture message, mail, etc.
+So, the goal is common that is communication, but their approach is different. This is called Polymorphism.
